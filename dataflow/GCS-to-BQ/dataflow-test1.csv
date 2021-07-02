@@ -1,0 +1,4 @@
+Student_name,Roll_number(10 digit number),registration_number(UUID in caps without hyphens),Branch,Address1, Address2
+A1,3216549873,A,CSE,house,area
+B1,3216549873,B,CSE,house2,lane2
+C1,3216549873,C,CSE,house3,lane3
