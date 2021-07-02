@@ -1,0 +1,21 @@
+{
+	"variables_config": {
+		"file1.csv": {
+			"TABLE_NAME" : "table1",
+            "TABLE":"final1",
+            "ARCHIVE":"archive_loc1/",
+            "BIGQUERY_TO_GCS":"gs://gcp-training-composer-archive/export-bigquery.csv",
+            "QUERY":"SELECT * FROM composer_training.table1 where zip_code='50314'"
+
+		},
+
+        "file2.csv": {
+			"TABLE_NAME" : "table2",
+            "TABLE":"final2",
+            "ARCHIVE":"archive_loc2/",
+            "BIGQUERY_TO_GCS":"gs://gcp-training-composer-archive/export-bigquery2.csv",
+            "QUERY":"SELECT * FROM composer_training.table2 where Year='2006'"        
+
+		}
+	}
+}

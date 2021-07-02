@@ -26,7 +26,7 @@ def print_string(to_print):
 
 
 dag = models.DAG(
-    dag_id='assignmentq_surya',
+    dag_id='assignment1_surya',
     start_date=days_ago(1),
     schedule_interval=datetime.timedelta(days=1),
     tags=['example'],
