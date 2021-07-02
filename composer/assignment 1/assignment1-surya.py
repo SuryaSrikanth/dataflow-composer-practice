@@ -32,6 +32,17 @@ dag = models.DAG(
     tags=['example'],
 )
 
+dag.doc_md = """
+Assignment 1
+prints start,
+csv file(assignment.csv) from gcs to BQ table composer_training.temp_table,
+does sql operation and saves to table temp1,
+exports to gs://gcp-training-composer-archive/export-bigquery.csv,
+archives to gcp-training-composer-archive bucket,
+deletes temp_table,
+prints end
+""" 
+
 
 start = PythonOperator(
         task_id='start',

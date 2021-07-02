@@ -5,7 +5,7 @@
             "TABLE":"final1",
             "ARCHIVE":"archive_loc1/",
             "BIGQUERY_TO_GCS":"gs://gcp-training-composer-archive/export-bigquery.csv",
-            "QUERY":"SELECT * FROM composer_training.table1 where zip_code='50314'"
+            "QUERY":"SELECT * FROM composer_training.table1 where store_number=2190 "
 
 		},
 

@@ -19,6 +19,8 @@ def print_string(to_print):
     return True
 
 
+ # otherwise, type it like this
+
 PROJECT_ID = 'sudarshan-training'
 DATASET_NAME = 'composer_training'
 BUCKET_NAME = 'gcp-training-composer'
@@ -32,6 +34,9 @@ dag = models.DAG(
     tags=['example'],
 )
 
+dag.doc_md = """
+Assignment 2
+""" 
 
 start = PythonOperator(
     task_id='start',
